@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game {
+    text-align: center;
+}
+
+#role-selection {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.card.red {
+    background-color: red;
+    color: white;
+}
+
+.card.blue {
+    background-color: blue;
+    color: white;
+}
+
+.card.assassin {
+    background-color: black;
+    color: white;
+}
+
+.card.clicked {
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+#spymaster-info, #team-info {
+    margin: 20px;
+}

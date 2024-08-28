@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codenames Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Codenames Clone</h1>
+        <div id="role-selection">
+            <button id="set-spymaster">Set as Spymaster</button>
+            <button id="set-team-member">Set as Team Member</button>
+        </div>
+        <div id="roles">
+            <div id="spymaster-view" class="hidden">
+                <h2>Spymaster View</h2>
+                <div id="spymaster-info">
+                    <input type="text" id="clue-input" placeholder="Enter clue">
+                    <input type="number" id="clue-number" placeholder="Number" min="1">
+                    <button id="give-clue">Give Clue</button>
+                </div>
+                <div id="board"></div>
+            </div>
+            <div id="team-member-view" class="hidden">
+                <h2>Team Member View</h2>
+                <div id="board"></div>
+                <div id="team-info">
+                    <p id="team-message"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
